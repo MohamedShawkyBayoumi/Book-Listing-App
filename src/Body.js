@@ -63,6 +63,13 @@ class Body extends React.Component {
                         <SingleAuthor author={author} />
                     )}/>
                 ))}
+
+
+                {categories.map(category => (
+                    <Route key={category.id} path={`/category/${category.id}`} render={() => (
+                        <SingleCategory category={category} />
+                    )}/>
+                ))}
                 
                 
                 

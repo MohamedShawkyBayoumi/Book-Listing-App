@@ -14,7 +14,7 @@ class Sidebar extends React.Component {
                         <ul>
                             
                             {categories.map(category => (
-                                <li key={category.id}><a href="#">{category.name}</a></li>
+                                <li key={category.id}><Link to={`/category/${category.id}`}>{category.name}</Link></li>
                             ))}
                         </ul>
                     </div>

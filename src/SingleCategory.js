@@ -2,9 +2,12 @@ import React from 'react';
 
 class SingleCategory extends React.Component {
     render(){
+
+        const { category } = this.props;
+
         return (
             <div className="single-category">
-                <h2>Sample category Name</h2>
+                <h2>{category.name}</h2>
 
                 <div className="book-article">
                     <div className="book-cover">
