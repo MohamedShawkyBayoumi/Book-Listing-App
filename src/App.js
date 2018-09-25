@@ -29,7 +29,7 @@ class App extends Component {
 
   addNewCategory = (nameInput) => {
     //console.log(nameInput);
-    const ID = Math.floor(Math.random() * 100 + 1); 
+    const ID = Math.floor(Math.random() * 100 + 1);
 
     const newCategory = {
       id: ID,
@@ -40,9 +40,24 @@ class App extends Component {
         categories: currentCategories.categories.concat([newCategory])
       }
     })
+  }
 
+  addNewAuthor = (name, jobTitle, bio) => {
 
+    const id = Math.floor(Math.random() * 100 + 1);
 
+    const newAuthor = {
+      id,
+      name,
+      jobTitle,
+      bio
+    }
+
+    this.setState((currentAuthors) => {
+      return {
+        authors: currentAuthors.authors.concat([newAuthor])
+      }
+    })
   }
 
 
@@ -65,7 +80,7 @@ class App extends Component {
               authors={this.state.authors}
               categories={this.state.categories}
               addNewCategory={this.addNewCategory}
-              
+              addNewAuthor={this.addNewAuthor}
               />
 
           </div>
