@@ -1,0 +1,243 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: #cccccc;
+  height: 100%;
+}
+
+/* Header */
+
+header {
+  background-color: #333333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+}
+
+header .logo {
+  margin: 20px 20px 0;
+}
+
+header .logo a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 26px;
+}
+
+header .navbar {
+  margin: 10px 20px 10px;
+}
+
+header .navbar ul {
+  list-style: none;
+  display: flex;
+}
+
+header .navbar ul li {
+  
+  margin-left: 5px;
+}
+
+header .navbar ul li a {
+  color: #fff;
+  background-color: #008cff;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+header .navbar ul .edit-mode a {
+  background-color: #ff0080;
+}
+
+/* Header */
+
+/* Main */
+
+main {
+  margin: 0 auto;
+  width: 85%;
+}
+
+main .main-wrapper {
+  display: flex;
+  position: relative;
+  height: 100%;
+  min-height: calc(100vh - 70px);
+  background: #fff;
+  align-items: stretch;
+  align-content: stretch;
+  
+  
+  
+}
+
+
+
+/* Main */
+
+
+/* Sidebar */
+
+.main-wrapper section {
+  width: 500px;
+}
+
+
+.sidebar aside {
+  margin: 30px 20px;
+}
+
+.sidebar aside div {
+  border: 1px solid #3d8bcd;
+  border-radius: 7px;
+  
+}
+
+.sidebar aside div h3 {
+  background-color: #3d8bcd;
+  margin: 0;
+  padding: 5px 10px;
+  color: #fff;
+  font-size: 15px;
+  border-radius: 7px 7px 0 0;
+}
+
+.sidebar aside div ul li a {
+  text-decoration: none;
+}
+
+/* Sidebar */
+
+/* Body */
+
+.main-wrapper .body {
+  width: 100%;
+  padding: 30px 25px 30px 15px;
+}
+
+.main-wrapper .body .book-article {
+  border-bottom: 2px solid #707070;
+  
+  display: flex;
+  padding-bottom: 10px;
+}
+
+
+
+.main-wrapper .body .book-article .book-cover {
+  margin:20px 15px 0 0;
+}
+
+/* Body */
+
+/* Book Details */
+
+.book-details .book-head {
+  display: flex;
+  justify-content: space-between;
+}
+
+.book-details .book-head .book-description p {
+  font-size: 14px;
+  margin: 0;
+}
+
+.book-details .book-head .book-description p span {
+  font-weight: bold;
+}
+
+/* Book Details */
+
+/* Add New Book */
+
+
+
+.body .add-new-book .new-book-form label {
+  display: block;
+  padding-top: 10px;
+  color: #999999;
+  
+}
+
+.body .add-new-book .new-book-form label input {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #dddddd;
+  box-sizing: border-box;
+}
+
+.body .add-new-book .new-book-form .select-options {
+  display: flex;
+}
+
+.body .add-new-book .new-book-form .select-options select {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #dddddd;
+  box-sizing: border-box;
+}
+
+.body .add-new-book .new-book-form .select-options label {
+  width: 50%;
+}
+
+.body .add-new-book .new-book-form .select-options > label {
+  margin-right: 5px;
+}
+
+
+.body .add-new-book .new-book-form .description-area label textarea {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #dddddd;
+  box-sizing: border-box;
+  height: 300px;
+}
+
+.body .add-new-book .new-book-form .numeric-inputs {
+  display: flex;
+}
+
+
+.body .add-new-book .new-book-form .numeric-inputs label {
+  width: 50%;
+}
+
+.body .add-new-book .new-book-form .numeric-inputs .num-label  {
+  margin-right: 5px;
+}
+
+.body .add-new-book .new-book-form .btns {
+  margin: 30px 0;
+}
+
+.body .add-new-book .new-book-form .btns .save-btn {
+  background: #3d8bcd;
+  color: #fff;
+  padding: 10px 40px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+.body .add-new-book .new-book-form .btns .cancel-btn {
+  background: none;
+  padding: 10px 40px;
+  cursor: pointer;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  margin-left: 20px;
+}
+
+/* Add New Book */
+
