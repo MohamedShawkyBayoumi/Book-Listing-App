@@ -61,6 +61,22 @@ class App extends Component {
   }
 
 
+  addNewBook = (title, category, author, description, isbn, pagesNumber, publishYear, imageURL) => {
+    
+
+    const id = Math.floor(Math.random() * 100 + 1);
+
+    const newBook = {
+      id, title, category, author, description, isbn, pagesNumber, publishYear, imageURL
+    }
+
+    this.setState((currentBooks) => {
+      return {
+        books: currentBooks.books.concat([newBook])
+      }
+    });
+  }
+
   render() {
     return (
       <div className="wrapper">
@@ -81,6 +97,7 @@ class App extends Component {
               categories={this.state.categories}
               addNewCategory={this.addNewCategory}
               addNewAuthor={this.addNewAuthor}
+              addNewBook={this.addNewBook}
               />
 
           </div>
