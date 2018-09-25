@@ -27,6 +27,25 @@ class App extends Component {
   };
 
 
+  addNewCategory = (nameInput) => {
+    //console.log(nameInput);
+    const ID = Math.floor(Math.random() * 100 + 1); 
+
+    const newCategory = {
+      id: ID,
+      name: nameInput
+    }
+    this.setState((currentCategories) => {
+      return {
+        categories: currentCategories.categories.concat([newCategory])
+      }
+    })
+
+
+
+  }
+
+
   render() {
     return (
       <div className="wrapper">
@@ -45,6 +64,8 @@ class App extends Component {
               books={this.state.books}
               authors={this.state.authors}
               categories={this.state.categories}
+              addNewCategory={this.addNewCategory}
+              
               />
 
           </div>

@@ -14,7 +14,7 @@ class Body extends React.Component {
 
     render(){
 
-        const { authors, books, categories } = this.props;
+        const { authors, books, categories, addNewCategory } = this.props;
 
         return (
             <section className="body">
@@ -49,7 +49,7 @@ class Body extends React.Component {
                 )}/>
                 
                 <Route path="/category/new" render={() => (
-                    <AddNewCategory />
+                    <AddNewCategory addNewCategory={addNewCategory} categories={categories} />
                 )}/>
 
                 {books.map(book => (
