@@ -43,7 +43,7 @@ class App extends Component {
             
             <Body
               books={this.state.books}
-              
+              authors={this.state.authors}
               />
 
           </div>

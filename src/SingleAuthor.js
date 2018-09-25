@@ -2,14 +2,15 @@ import React from 'react';
 
 class SingleAuthor extends React.Component {
     render(){
+
+        const { author } = this.props;
+
         return (
             <div className="single-author">
-                <h2>Patricia Hermiston</h2>
-                <h3>-- Senior Optimization Faciliator</h3>
+                <h2>{author.name}</h2>
+                <h3>{author.jobTitle}</h3>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Autem magnam non perferendis iure rem repellat dicta numquam veritatis,
-                    eveniet officia quia expedita architecto dolorem fugiat corrupti natus fugit! Nihil, ab!
+                    {author.bio}
                     <br/><br/><br/><br/>
                 </p>
 

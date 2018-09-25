@@ -57,6 +57,15 @@ class Body extends React.Component {
                         <BookDetails book={book} />
                     )}/>
                 ))}
+
+                {authors.map(author => (
+                    <Route key={author.id} path={`/author/${author.id}`} render={() => (
+                        <SingleAuthor author={author} />
+                    )}/>
+                ))}
+                
+                
+                
                 
 
             </section>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 class Sidebar extends React.Component {
     render(){
@@ -13,7 +14,7 @@ class Sidebar extends React.Component {
                         <ul>
                             
                             {categories.map(category => (
-                                <li key={category.id}><a href="#">{category.name}</a></li>    
+                                <li key={category.id}><a href="#">{category.name}</a></li>
                             ))}
                         </ul>
                     </div>
@@ -22,8 +23,8 @@ class Sidebar extends React.Component {
                     <div>
                         <h3>Authors</h3>
                         <ul>
-                        {authors.map(category => (
-                                <li key={category.id}><a href="#">{category.name}</a></li>    
+                        {authors.map(author => (
+                                <li key={author.id}><Link to={`/author/${author.id}`}>{author.name}</Link></li>
                             ))}
                         </ul>
                     </div>
