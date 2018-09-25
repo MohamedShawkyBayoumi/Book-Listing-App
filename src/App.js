@@ -31,14 +31,17 @@ class App extends Component {
         <Header />
         <main>
           <div className="main-wrapper">
-            <Sidebar />
+          
+            <Sidebar 
+              categories={this.state.categories}
+              authors={this.state.authors}
+            />
 
 
             
             <Body
-              authors={this.state.authors}
               books={this.state.books}
-              categories={this.state.categories}
+              
               />
 
           </div>
