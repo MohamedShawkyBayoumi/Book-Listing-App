@@ -1,17 +1,18 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 class Header extends React.Component {
     render(){
         return (
             <header>
                 <div className="logo">
-                    <a href="#">Book Listing</a>
+                    <Link to="/">Book Listing</Link>
                 </div>
                 <nav className="navbar">
                     <ul>
-                        <li><a href="#">New Book</a></li>
-                        <li><a href="#">New Author</a></li>
-                        <li><a href="#">New Category</a></li>
+                        <li><Link to="/book/new">New Book</Link></li>
+                        <li><Link to="/author/new">New Author</Link></li>
+                        <li><Link to="/category/new">New Category</Link></li>
                         <li className="edit-mode"><a href="#">Edit Mode</a></li>
                     </ul>
                 </nav>

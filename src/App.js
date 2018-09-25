@@ -11,7 +11,9 @@ class App extends Component {
   state = {
     authors: [],
     books: [],
-    categories: []
+    categories: [],
+    currentPage: 1,
+    booksPerPage: 6
   }
 
   componentDidMount(){
