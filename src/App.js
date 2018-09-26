@@ -77,7 +77,18 @@ class App extends Component {
     });
   }
 
+
+  handleClick = (event) => {
+    this.setState({
+      currentPage: Number(event.target.id)
+    });
+  }
+
+
   render() {
+
+    
+
     return (
       <div className="wrapper">
         <Header />
@@ -98,6 +109,9 @@ class App extends Component {
               addNewCategory={this.addNewCategory}
               addNewAuthor={this.addNewAuthor}
               addNewBook={this.addNewBook}
+              currentPage={this.state.currentPage}
+              booksPerPage={this.state.booksPerPage}
+              handleClick={this.handleClick}
               />
 
           </div>

@@ -27,7 +27,7 @@ header .logo a {
 }
 
 header .navbar {
-  margin: 10px 20px 10px;
+  margin: 25px 20px 10px;
 }
 
 header .navbar ul {
@@ -241,3 +241,6 @@ main .main-wrapper {
 
 /* Add New Book */
 
+.pagination-container nav ul {
+  justify-content: center;
+}
